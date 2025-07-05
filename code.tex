@@ -1,0 +1,244 @@
+Venom, [05-07-2025 17:54]
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Use Times New Roman for main text
+\usepackage{mathptmx}
+
+\usepackage{newtxtext,newtxmath} % A better Times-like font (optional alternative)
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries\fontfamily{ptm}\selectfont
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries\fontfamily{ptm}\selectfont
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \begin{center}
+    \underline{\Huge \scshape Rupesh Sharma} \\[2pt]
+    \small
+    \underline{
+    \faPhone\ +91 8949810879 }
+    \quad
+    \underline{
+    \faEnvelope\ 2022UEC1620@mnit.ac.in 
+    }
+\end{center}
+
+    \vspace{-18pt}
+\end{center}
+\vspace{2pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {B.Tech. in Electronics and Communication Engineering \& Minor Specialization in Management}{Nov. 2022 -- Present}
+      {Malviya National Institute of Technology, Jaipur}{8.39 / 10}
+      \resumeSubheading
+      {Senior Secondary Examinations - PCM (RBSE)}{July 2020 -- May 2021}
+      {Adarsh Vidya Mandir Bassi, Jaipur}{ 100 \% }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {\textbf{Technical Intern} $|$ \emph{Cisco India Pvt. Ltd.}}{May 2025 -- July 2025}
+    {Diagnostic Portico Migration Project $|$ React, Java, Cloud}{}
+
+Venom, [05-07-2025 17:54]
+\resumeItemListStart
+        \resumeItem{Migrated Diagnostic Portico to CCE Admin on cloud VMs as a scalable solution with high availability and production reliability.}
+        \resumeItem{Designed a secure API layer using Java to fetch XML data from servers, convert it to JSON, and deliver it efficiently to the frontend.}
+        \resumeItem{Developed a robust React.js UI with clean, structured, maintainable code, comprehensive testing, and thorough documentation following industry best practices.}
+        
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {\textbf{Research Intern} $|$ \emph{Air Force Station, Jaipur}}{Jan 2024 -- May 2024}
+    {Damage Assesment for Balestic Missile }{}
+      % {Research Intern}{Jan 2024 -- May 2024}
+      % {Air Force Station, Jaipur}{}
+      \resumeItemListStart
+        \resumeItem{Developed a simulation using Python`s NumPy to estimate the minimum missiles needed to destroy enemy runways.}
+        \resumeItem{Designed a user-friendly GUI with Tkinter and ttkbootstrap, integrating Matplotlib for dynamic data visualization.}
+        \resumeItem{Utilized OpenCV for advanced image processing to analyze runway dimensions and missile impact scenarios.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+  {\textbf{Expense Splitter App} $|$ \emph{React, Firebase, AI}}{April 2025 -- Present}
+  \resumeItemListStart
+ \resumeItem{Building a full-stack expense tracker with group-based splitting, tracking, and real-time balance updates.}
+\resumeItem{Integrating OpenAI API for AI-powered expense categorization, smart summaries, and user insights.}
+\resumeItem{Exploring Firebase for real-time database operations, user authentication, and scalable backend services.}
+
+  \resumeItemListEnd
+  \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{IoT based Temperature Monitor system} $|$ \emph{Embedded C, Blynk Cloud, ESP8266 }}{Mar 2025 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Developed an IoT-based temperature monitoring system using ESP8266 and DHT11 sensors, using Arduino and Embedded C.}
+            \resumeItem{Integrated real-time data visualization on mobile and web dashboards using the Blynk cloud platform.}
+            \resumeItem{Implemented automated alert notifications via email and SMS when temperature thresholds were exceeded for security.}
+
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\textbf{Password Manager} $|$ \emph{Express, React, Node.js, MongoDB, Tailwind CSS }}{June 2024 -- Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a password manager using the MERN stack with secure local storage and MongoDB for persistence
+}
+            \resumeItem{Built an intuitive UI for managing passwords enhanced by TailwindCSS for responsiveness.
+}
+            \resumeItem{Integrated backend APIs with the frontend, ensuring smooth data flow between the client and server.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{TIC TAC TOE} $|$ \emph{C++, Data Structures and Algorithms }}{June 2024}
+          \resumeItemListStart
+            \resumeItem{Designed TicTacToe game in C++ using MinMax, Backtracking alogorithms,.}
+            \resumeItem{Utilized object-oriented programming and algorithmic techniques to create a robust and scalable game architecture.}
+            \resumeItem{Optimized game logic and decision-making processes through efficient algorithmic strategies.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{-4pt}
+    
+%-----------PROGRAMMING SKILLS-----------
+
+Venom, [05-07-2025 17:54]
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, Python,Java,HTML/CSS, JavaScript, SQL,Embedded-C} \\
+     \textbf{Technologies/Frameworks}{: Node js, Express js, Tailwind CSS, React js, MySQL, Mongo DB, Scikit Learn, Pandas, NumPY} \\
+     \textbf{Other Software}{: Git \& Github, Matlab, Canva, LT spice, Arduino,Copilot } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------INVOLVEMENT---------------
+\section{Leadership/Extracurriculars}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Student Placement Coordinator}{March 2025 -- Present}{Placement \& Training Cell}{Malviya National Institute of Technology, Jaipur}
+        \resumeSubheading{Joint Secretary}{May 2024 -- Feb 2025}{ECE Department Placement Club}{Malviya National Institute of Technology, Jaipur}
+
+    \resumeSubHeadingListEnd
+
+%-----------Achievements---------------
+\section{Achievements}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{}{Coding Profile:Highest Rating 1226 on CodeForces, above 400 problem solved on leetcode with global ranking below 175k(top 3\%).} \\
+     \textbf{}{Finalist at “National Vaidik Maths Competition -2017” at Bengaluru India.} \\
+     \textbf{}{Ranked in the top 1 \% nationwide in the JEE Mains.} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
